@@ -1,0 +1,19 @@
+<footer role="contentinfo" id="footer" class="background-quaternary">
+    <div class="grid">
+        <div class="copyright">
+            <p> © <span id="currentYear"></span> Copyright Brand. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+ <!-- serviceWorker -->
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js');
+    });
+}
+</script>
+<!-- netlify-identity -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
+<!-- app -->
+<script src="./../app.js"></script>

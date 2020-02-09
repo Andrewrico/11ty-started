@@ -1,0 +1,257 @@
+
+
+#form-holder {
+    width: 100%;
+    max-width: 768px;
+    height: 50vh;
+    min-height: 768px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* form */
+.form {
+    width: 100%;
+}
+
+/* field */
+.field {
+    display: grid;
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+}
+
+.field_x1 {
+    grid-template-columns: 1fr;
+}
+
+.field_x2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.field_x3 {
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+[id*="field_"] {
+    display: none
+}
+
+#field_1 {
+    display: grid;
+}
+
+/* field_inquiry */
+.field_inquiry {
+    grid-column: 1 / -1;
+    color: #000;
+    font-size: 2.2em;
+    min-height: 100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+/* field_label */
+.field_label {
+    color:#000;
+    /* min-height: 200px; */
+    padding: 1rem;
+}
+
+/* field_number */
+.field_number input[type="number"] {
+    cursor: text;
+    color: #000 !important;
+    border: none;
+    font-size: 1em;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* field_text */
+.field_text input[type="text"] {
+    cursor: text;
+    color: #000 !important;
+    border: none;
+    font-size: 1em;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* button radio */
+.field_radios input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.field_radios label {
+    display: inline-grid;
+    place-items: center;
+    background: var(--color-white);
+    /* color: #fff; */
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 300px;
+}
+
+.field_radios label:active {
+    box-shadow: 0 2px #aaaaaa;
+    transform: translateY(4px);
+}
+
+.field_radios input[type="radio"]:checked+label {
+    background-color: rgb(4, 49, 65);
+}
+
+.field_radios input[type="radio"]:focus+label {
+    border: 2px dashed #ddd;
+}
+
+
+
+/* button field */
+.field button {
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    background: var(--color-primary);
+    grid-column: 1 / -1;
+    outline: none;
+    border: none;
+    font-family: sans-serif, Arial;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.field button:active {
+    box-shadow: 0 2px #aaaaaa;
+    transform: translateY(4px);
+}
+
+/* button submit */
+.field_submit button {
+    cursor: pointer;
+    border-radius: 4px;
+    color: #000;
+    background: var(--color-primary);
+}
+
+/* hidden */
+.field_label-hidden {
+    display: none;
+    visibility: hidden;
+}
+
+/* input */
+input {
+    border: 1px solid #ddd !important;
+}
+
+input:invalid {
+    background: #fff3f3ba !important;
+}
+
+input:valid {
+    background: #eaf2ffbf !important;
+}
+
+::-webkit-input-placeholder {
+    color: #b9b9b9;
+}
+
+::-moz-placeholder {
+    color: #b9b9b9;
+}
+
+:-ms-input-placeholder {
+    color: #b9b9b9;
+}
+
+:-moz-placeholder {
+    color: #b9b9b9;
+}
+
+/* alert */
+.alert {
+    position: absolute;
+    display: inline-block;
+    margin-top: 6rem;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    z-index: 9999999;
+    color: white;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+}
+
+.alert-danger {
+    background-color: #000000;
+}
+
+.alert-success {
+
+    background-color: #3b593b;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+
+
+input {
+    cursor: text;
+    color: #000 !important;
+    display: block;
+    border: none;
+    font-size: 1em;
+    padding: 1rem;
+    border-radius: 2px;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+input {
+    transition: background .5s ease-out;
+}
+
+
+.field_income svg {
+    width: 100px;
+    height: 100px;
+}
+
+.field_income label {
+    display: inline-grid;
+    place-items: center;
+    background: var(--color-white);
+    /* color: #fff; */
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 100px;
+}

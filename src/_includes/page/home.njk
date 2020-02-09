@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+<!-- include head | Block Head -->
+{% include "partials/head/head.njk" %}{% block head %}{% endblock %}
+
+<body>
+
+<!-- include banner | Block Page -->
+{% include "partials/banner/home.njk" %}{% block content %}{% endblock content %}
+
+<!-- include footer | Block Footer -->
+{% include "partials/footer/footer.njk" %}{% block foot %}{% endblock %}
+
+</body>
+
+</html>

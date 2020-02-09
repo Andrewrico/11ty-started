@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+
+  <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
+
+  {% include "partials/global/meta-info.njk" %}
+  <script>document.documentElement.classList.remove('no-js');</script>
+  {% block head %}{% endblock %}
+
+</head>
+
+<body>
+  {% include "partials/banner/home.njk" %}
+  {% block content %}
+  {% endblock content %}
+  {% include "partials/global/site-foot.njk" %}
+  {% block foot %}
+  {% endblock %}
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+  </script>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
+
+</body>
+</html>
