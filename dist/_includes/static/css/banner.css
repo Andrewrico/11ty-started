@@ -1,0 +1,16 @@
+.banner {
+	display: grid;
+	place-items: center;
+	min-height: 50vh;
+	background: var(--color-primary);
+
+}
+
+.banner_base-background {
+	background: var(--color-primary);
+
+}
+
+.banner_base-title {
+	color: var(--color-white);
+}

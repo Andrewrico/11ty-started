@@ -1,0 +1,21 @@
+#footer {
+	color: #fff;
+	width: 100%;
+	margin: auto;
+	padding: 1rem 0;
+	background: var(--color-primary);
+	
+}
+
+#footer a {
+	font-weight: 600;
+	color: white;
+}
+
+#footer a:hover {
+	opacity: 0.9;
+}
+
+#footer p {
+	margin: 0;
+}

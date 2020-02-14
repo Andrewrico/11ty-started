@@ -1,8 +1,29 @@
- <div class="topbar">
-    <div class="topbar__content">
-        <a href="/">
-            <p>Brand</p>
-        </a>
-        {% include "partials/components/nav.njk" %}
+ <div class="navbar">
+    <div class="navbar__container">
+    	<button id="drawer__button-open">
+			<svg height=24 style="enable-background:new 0 0 459 459" viewBox="0 0 459 459" width=24 x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg y=0px>
+				<path d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z" />
+			</svg>
+		</button>
+        <a class="navbar__brand" href="/">Brand</a>
+        {% if navigation.items %}
+		<nav class="navbar__menu">
+			<ul class="navbar__menu-list">
+			{% for item in navigation.items %}
+				{% set relAttribute = '' %}
+				{% set currentAttribute = '' %}
+				{% if item.rel %}
+				{% set relAttribute = ' rel="' + item.rel + '"' %}
+				{% endif %}
+				{% if page.url == item.url %}
+				{% set currentAttribute = ' aria-current="page"' %}
+				{% endif %}
+				<li class="navbar__menu-item">
+					<a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</nav>
+		{% endif %}
     </div>
 </div>

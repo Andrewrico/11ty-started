@@ -1,6 +1,10 @@
+// Imports
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const fs = require("fs");
+
+// Import Terser
+const Terser = require("terser");
 
 // Import filters
 const dateFilter = require('./src/filters/date-filter.js');
@@ -14,7 +18,9 @@ const parseTransform = require('./src/transforms/parse-transform.js');
 // Import data files
 const site = require('./src/_data/site.json');
 
+// config
 module.exports = function(config) {
+
   // Filters
   config.addFilter('dateFilter', dateFilter);
   config.addFilter('markdownFilter', markdownFilter);
@@ -28,12 +34,28 @@ module.exports = function(config) {
   config.addTransform('parse', parseTransform);
 
   // Passthrough copy
+  config.addPassthroughCopy("src/_includes/static");
+  config.addPassthroughCopy("src/_includes/static/css");
+  config.addPassthroughCopy("src/_includes/static/js");
+  config.addPassthroughCopy("src/_includes/static/images");
+  config.addPassthroughCopy("src/_includes/static/fonts");
+  config.addPassthroughCopy("src/_includes/static/icons");
   config.addPassthroughCopy('src/admin/config.yml');
   config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 
-  const now = new Date();
+  config.addFilter("jsmin", function(code) {
+    let minified = Terser.minify(code);
+    if( minified.error ) {
+        console.log("Terser error: ", minified.error);
+        return code;
+    }
+    return minified.code;
+  });
 
+  // Date
+  const now = new Date();
+  
   // Custom collections
   const livePosts = post => post.date <= now && !post.data.draft;
   config.addCollection('posts', collection => {
@@ -68,7 +90,6 @@ module.exports = function(config) {
   });
 
   // dir 
-  config.addPassthroughCopy("src/_assets");
   return {
     dir: {
       input: "src",

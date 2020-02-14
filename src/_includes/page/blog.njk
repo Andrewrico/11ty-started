@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-
-<html lang="en" class="no-js">
-
- <!-- include head | Block Head -->
-{% include "partials/head/head.njk" %}{% block head %}{% endblock %}
-
-<body>
-
-<!-- include banner | Block Page -->
-{% include "partials/banner/blog.njk" %}{% block content %}{% endblock content %}
-
-<!-- include footer | Block Footer -->
-{% include "partials/footer/footer.njk" %}{% block foot %}{% endblock %}
-
-</body>
-
-</html>
+{% extends 'layouts/base.njk' %}
+{# Post list content #}
+{% set postListHeading = 'All posts' %}
+{% set postListItems = collections.posts %}
+{% block content %}
+  {% include "partials/banner/base.njk" %}
+    <main id="main-content" tabindex="-1">
+      {% include "partials/components/post-list.njk" %}
+    </main>
+{% endblock %}
+{{ content | safe }}

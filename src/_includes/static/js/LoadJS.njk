@@ -1,0 +1,10 @@
+{% set js %}
+{% include "./app.js" %}
+{% include "./dropdown.js" %}
+{% include "./drawer.js" %}
+{% include "./accordion.js" %}
+{% include "./current-year.js" %}
+{% endset %}
+<script>
+{{ js | jsmin | safe }}
+</script>

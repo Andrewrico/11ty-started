@@ -1,0 +1,17 @@
+.banner {
+	display: grid;
+	place-items: center;
+	min-height: 400px;
+	height: 65vh;
+	background: var(--color-primary);
+
+}
+
+.banner_base-background {
+	background: var(--color-primary);
+
+}
+
+.banner_base-title {
+	color: var(--color-white);
+}

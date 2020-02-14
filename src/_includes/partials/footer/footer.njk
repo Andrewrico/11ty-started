@@ -1,11 +1,18 @@
-<footer role="contentinfo" id="footer" class="background-quaternary">
-    <div class="grid">
-        <div class="copyright">
-            <p> © <span id="currentYear"></span> Copyright Brand. All Rights Reserved</p>
-        </div>
+<!-- footer -->
+<footer id="footer">
+    <div class="grid"></div>
+    <div class="footer__copyright">
+        <p> © <span id="currentYear"></span> Copyright {{site.name}}. All Rights Reserved</p>
     </div>
 </footer>
- <!-- serviceWorker -->
+
+<!-- include LoadJS -->
+{% include "static/js/LoadJS.njk" %}
+
+<!-- jsPath -->
+<script src="{{ jsPath }}"  type="text/javascript" ></script>
+
+<!-- serviceWorker -->
 <script>
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
@@ -13,7 +20,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 </script>
+
 <!-- netlify-identity -->
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
-<!-- app -->
-<script src="./../app.js"></script>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/posts/a-post-with-code-samples/</loc>
+    <lastmod>Mon Jun 17 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/posts/a-post-with-figures-and-video/</loc>
+    <lastmod>Mon Jun 17 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/posts/a-simple-post/</loc>
+    <lastmod>Mon Jun 17 2019 20:00:00 GMT-0400 (Eastern Daylight Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/admin/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/blog/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/feed.xml</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/contact/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/service-worker.js</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/tags/demo-content/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/tags/code/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/tags/blog/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/tags/media/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/tags/simple-post/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/about/</loc>
+    <lastmod>Sun Feb 09 2020 11:56:35 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/posts/a-scheduled-post/</loc>
+    <lastmod>Fri Jun 17 2022 20:00:00 GMT-0400 (Eastern Daylight Time)</lastmod>
+  </url>
+</urlset>
