@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<!-- include head | Block head -->
+<!-- PAGE HEAD -->
 {% include "partials/head/head.njk" %}{% block head %}{% endblock %}
 <body>
-<!-- include drawer | Block nav-->
+<!-- PAGE NAVBAR -->
 {% include "partials/navigation/navbar.njk" %}
 {% include "partials/navigation/drawer.njk" %}
-<!-- Block page -->
+<!-- PAGE CONTENT -->
 {% block content %}{% endblock content %}
-<!-- include footer | Block footer -->
+<!-- PAGE FOOTER -->
 {% include "partials/footer/footer.njk" %}{% block foot %}{% endblock %}
 </body>
 </html>

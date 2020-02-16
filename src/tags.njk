@@ -29,8 +29,9 @@ permalink: /tags/{{ tag }}/
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    {# {% include "partials/components/intro.njk" %} #}
-    {% include "partials/components/post-list.njk" %}
+    {% include "partials/banner/base.njk" %}
+    {% include "partials/post-list/post-list.njk" %}
     {% include "partials/components/pagination.njk" %}
   </main>
 {% endblock %}
+{{ content | safe }}

@@ -18,7 +18,8 @@
     <updated>2019-06-17T20:00:00-04:00</updated>
     <id>https://11ty-started.netlify.com/posts/a-simple-post/</id>
     <content type="html"><![CDATA[
-      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and
+Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
 <p>How about a <code>&lt;blockquote&gt;</code>?</p>
 <blockquote>
 <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue.</p>
@@ -47,7 +48,9 @@
     <updated>2019-06-17T20:00:00-04:00</updated>
     <id>https://11ty-started.netlify.com/posts/a-post-with-figures-and-video/</id>
     <content type="html"><![CDATA[
-      <p>A post to demonstrate how a blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and
+Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+<p>A post to demonstrate how a blog post looks on Hylia. Content is all set in the “Body” field as markdown and Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
 <p>If you want to make an image bleed-out, add a title attribute to it and the front-end will automatically wrap it in a <code>&lt;figure&gt;</code> tag for you.</p>
 <p><img src="/images/demo-image-1.jpg" alt="The top of a grey concrete building with a blue sky in the background" title="Brutalism at its finest. Photo by Artificial Photography on Unsplash."></p>
 <p>You can also add videos to posts from YouTube or Vimeo (or wherever, really) and the front-end will also make those bleed-out for you too.</p>
@@ -69,7 +72,9 @@
     <updated>2019-06-17T20:00:00-04:00</updated>
     <id>https://11ty-started.netlify.com/posts/a-post-with-code-samples/</id>
     <content type="html"><![CDATA[
-      <p>The best way to demo a code post is to display a real life post, so check out this one from <a href="https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/">andy-bell.design</a> about a full bleed CSS utility.</p>
+      <p>A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and
+Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.</p>
+<p>The best way to demo a code post is to display a real life post, so check out this one from <a href="https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/">andy-bell.design</a> about a full bleed CSS utility.</p>
 <hr>
 <p>Sometimes you want to break your components out of the constraints that they find themselves in. A common situation where this occurs is when you don’t have much control of the container that it exists in, such as a CMS main content area.</p>
 <p>This is even more the case with editing tools such as the <a href="https://wordpress.org/gutenberg/">WordPress Gutenberg editor</a>, where in theory, you could pull in a component from a design system and utilise it in the main content of your web page. In these situations, it can be pretty darn handy to have a little utility that makes the element 100% of the viewport’s width <em>and</em> still maintain its flow within its parent container.</p>

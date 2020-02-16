@@ -34,16 +34,24 @@ module.exports = function(config) {
   config.addTransform('parse', parseTransform);
 
   // Passthrough copy
-  config.addPassthroughCopy("src/_includes/static");
-  config.addPassthroughCopy("src/_includes/static/css");
-  config.addPassthroughCopy("src/_includes/static/js");
-  config.addPassthroughCopy("src/_includes/static/images");
-  config.addPassthroughCopy("src/_includes/static/fonts");
-  config.addPassthroughCopy("src/_includes/static/icons");
+  config.addPassthroughCopy("src/_includes/static/");
+  config.addPassthroughCopy("src/_includes/static/css/stylesheet.css");
+  config.addPassthroughCopy("src/_includes/static/js/app.js");
+  config.addPassthroughCopy("src/_includes/static/images/");
+  config.addPassthroughCopy("src/_includes/static/fonts/");
+  config.addPassthroughCopy("src/_includes/static/icons/lib.svg");
   config.addPassthroughCopy('src/admin/config.yml');
   config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 
+  // config.setFrontMatterParsingOptions({
+  //   excerpt: true,
+  //   excerpt_separator: "<!-- excerpt -->"
+  // });
+
+
+
+  // JS minify
   config.addFilter("jsmin", function(code) {
     let minified = Terser.minify(code);
     if( minified.error ) {
@@ -52,7 +60,7 @@ module.exports = function(config) {
     }
     return minified.code;
   });
-
+  
   // Date
   const now = new Date();
   
@@ -88,15 +96,18 @@ module.exports = function(config) {
       }
     }
   });
-
-  // dir 
+  // Directiory Output 
   return {
+    pathPrefix: "/",
     dir: {
       input: "src",
       output: "dist",
       data: "_data",
       includes: "_includes"
     },
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    templateFormats: ["html", "njk", "md"]
   };
 };

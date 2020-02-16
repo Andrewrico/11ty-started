@@ -1,15 +1,10 @@
-{# layouts #}
 {% extends 'layouts/base.njk' %}
-{# Post list content #}
-{% set postListHeading = 'All posts' %}
+{% set pageType = 'Page' %}
+{% set postListHeading = 'Recent posts' %}
 {% set postListItems = collections.posts %}
-{# block content#}
 {% block content %}
-    {# homepage banner #}
     {% include "partials/banner/base.njk" %}
-    {# Post list content #}
     <main id="main-content" tabindex="-1">
-        {# homepage content#}
         {% include "content/homepage.njk" %}
     </main>
 {% endblock %}

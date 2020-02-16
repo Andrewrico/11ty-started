@@ -1,16 +1,24 @@
-<!-- footer -->
+<!-- FOOTER -->
+
 <footer id="footer">
     <div class="grid"></div>
     <div class="footer__copyright">
-        <p> © <span id="currentYear"></span> Copyright {{site.name}}. All Rights Reserved</p>
+        <p> © <span id="currentYear"></span> Copyright {{ site.name }}. All Rights Reserved</p>
     </div>
 </footer>
 
-<!-- include LoadJS -->
-{% include "static/js/LoadJS.njk" %}
+<!-- JAVASCRIPT -->
 
-<!-- jsPath -->
-<script src="{{ jsPath }}"  type="text/javascript" ></script>
+{# Site Js File #}
+<script src="{{ site.staticAssetPath.js }}" type="text/javascript"></script>
+
+{# Page Js File #}
+{% if PageJSPath %}
+    <script src="{{ PageJSPath }}" type="text/javascript"></script>
+{% endif %}
+
+{# Loads Critial JS in all Pages #}
+{% include "static/js/LoadJS.njk" %}
 
 <!-- serviceWorker -->
 <script>

@@ -1,13 +1,18 @@
 ---
 title: A scheduled post
 date: '2022-06-18'
+excerpt: "Test La La la"
 tags:
   - demo-content
   - simple-post
   - blog
 ---
 
+A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and 
+Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.
+
 This post is scheduled for the future, specifically mid-2022. Hopefully you're still blogging by then too. Once that date ticks by, this post will automatically become published and visible.
+
 
 Otherwise, below is some styled content for you to play with.
 

@@ -1,11 +1,17 @@
 ---
 title: A post with code samples
 date: '2019-06-18'
+excerpt: "Test La La la"
 tags:
   - demo-content
   - code
   - blog
 ---
+
+A simple post to demonstrate how a normal blog post looks on Hylia. Content is all set in the “Body” field as markdown and 
+Eleventy transforms it into a proper HTML post. You can also edit the markdown file directly if you prefer not to use the CMS.
+
+
 The best way to demo a code post is to display a real life post, so check out this one from [andy-bell.design](https://andy-bell.design/wrote/creating-a-full-bleed-css-utility/) about a full bleed CSS utility.
 
 - - -

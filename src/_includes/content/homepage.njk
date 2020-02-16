@@ -15,21 +15,43 @@
 </section>
 
 <section>
+    <div class="grid columns-1">
+        <div class="DIV-title">
+            <h2>
+                Collection
+            </h2>
+        </div>
+        <div class="DIV-card">
+        {%- for sample in collections.samples -%}
+                <h3> {{ sample.data.title }} </h3>
+                <p> {{ sample.data.description }} </p>
+        {%- endfor -%}
+        </div>
+    </div>
+</section>
+
+<section>
     <div class="grid columns-3">
         <div class="divCard card">
-            {% include "static/icons/check_1.svg" %}
+            <svg>
+                <use href="_includes/static/icons/lib.svg#symbol-checked"></use>
+            </svg>            
             <p>
                 ver the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
         </div>
         <div class="divCard card">
-            {% include "static/icons/check_1.svg" %}
+            <svg>
+                <use href="_includes/static/icons/lib.svg#symbol-checked"></use>
+            </svg>            
             <p>
                 ver the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
         </div>
         <div class="divCard card">
-            {% include "static/icons/check_1.svg" %}
+            <svg>
+                <use href="_includes/static/icons/lib.svg#symbol-checked"></use>
+            </svg>
             <p>
                 ver the years, sometimes by accident, sometimes on purpose (injected humour and the like).
             </p>
@@ -38,45 +60,19 @@
 </section>
 
 <section>
-    <div class="grid columns-2">
+    <div class="grid columns-1 max-width-768">
         <div class="divAccordion">
              {% include "partials/accordion/accordion.njk" %}
-        </div>
-        <div class="divDropdown">
-            {% include "partials/dropdown/dropdown.njk" %}
-            <div class="card__mail-bar"></div>
-            <div class="card__mail-container">
-                <h3> Newslatters</h3>
-                <form 
-                    id="card__mail-subs-netliId-59" 
-                    name="card__mail-subs-netliId-59" 
-                    method="POST" 
-                    data-netlify="true"
-                    class="card__mail-form" 
-                    >
-                    <div class="card__mail-field">
-                        <label for="netliId-59-email">E-MAIL</label>
-                        <div class="field-group">
-                            <svg> <use href="/_assets/media/svg/sprites.svg#mail"></use></svg>
-                            <input type="email" id="netliId-59-email" name="netliId-59-email" placeholder="jhondue@mail.com" aria-label="email" required/>
-                        </div>
-                    </div>
-                    <el-button class="auto">
-                        <button type="submit" slot="button" class="el-btn">
-                            SUBSCRIBRE 
-                        </button>
-                    </el-button>
-                </form>
-            </div>
+             {% include "partials/dropdown/dropdown.njk" %}
         </div>
     </div>
 </section>
 
 
 <section>
-    <div class="grid columns-1 max-width-1024">
+    <div class="grid columns-1 max-width-768">
         <div class="DIV">
-{% include "partials/components/post-list.njk" %}
+            {% include "partials/post-list/post-list.njk" %}
         </div>
     </div>
 </section>

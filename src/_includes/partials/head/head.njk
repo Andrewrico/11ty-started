@@ -9,10 +9,15 @@
   <!-- icon -->
   <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
 
-  <!-- link page csss -->
-  <link rel="stylesheet" type="text/css"  href="{{ cssPath }}" />
 
-  <!-- include critical css -->
+  <!-- CSS Paths -->
+  <link rel="stylesheet" type="text/css"  href="{{ site.staticAssetPath.css }}" />
+
+  {% if PageCSSPath %}
+    <link rel="stylesheet" type="text/css"  href="{{ PageCSSPath }}" />
+  {% endif %}
+
+  <!-- Critical CSS -->
   {% include "static/css/LoadCSS.njk" %}
 
   <!-- no-js -->
