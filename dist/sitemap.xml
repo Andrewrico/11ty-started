@@ -47,17 +47,12 @@
   </url>
   
   <url>
+    <loc>https://11ty-started.netlify.com/tags/demo-content/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
     <loc>https://11ty-started.netlify.com/tags/simple-post/</loc>
-    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://11ty-started.netlify.com/tags/samples/</loc>
-    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://11ty-started.netlify.com/tags/media/</loc>
     <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
   </url>
   
@@ -67,7 +62,7 @@
   </url>
   
   <url>
-    <loc>https://11ty-started.netlify.com/tags/demo-content/</loc>
+    <loc>https://11ty-started.netlify.com/tags/media/</loc>
     <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
   </url>
   
@@ -79,16 +74,6 @@
   <url>
     <loc>https://11ty-started.netlify.com/about/</loc>
     <lastmod>Sun Feb 09 2020 11:56:35 GMT-0500 (Eastern Standard Time)</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://11ty-started.netlify.com/collections/homepage/samples/sample-1/</loc>
-    <lastmod>Sun Feb 16 2020 11:46:58 GMT-0500 (Eastern Standard Time)</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://11ty-started.netlify.com/collections/homepage/samples/sample-2/</loc>
-    <lastmod>Sun Feb 16 2020 11:48:08 GMT-0500 (Eastern Standard Time)</lastmod>
   </url>
   
   <url>

@@ -10,15 +10,18 @@
   <link rel="icon" href="{{ site.faviconPath }}" type="image/png" />
 
 
-  <!-- CSS Paths -->
+  <!-- CSS Inline  -->
+  {% include "static/css/inline/InlineCSS.njk" %}
+
+  <!-- CSS Stylesheet Paths -->
   <link rel="stylesheet" type="text/css"  href="{{ site.staticAssetPath.css }}" />
 
+  <!-- CSS Page Path -->
   {% if PageCSSPath %}
     <link rel="stylesheet" type="text/css"  href="{{ PageCSSPath }}" />
   {% endif %}
 
-  <!-- Critical CSS -->
-  {% include "static/css/LoadCSS.njk" %}
+
 
   <!-- no-js -->
   <script>document.documentElement.classList.remove('no-js');</script>
