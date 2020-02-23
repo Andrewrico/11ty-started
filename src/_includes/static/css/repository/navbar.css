@@ -1,9 +1,13 @@
 .navbar {
-	position: fixed;
+	position: relative;
+	display: block;
+	top: 0;
+	width: 100%;
 	background: var(--color-primary);
 	width: 100%;
 	z-index: 5;
 	padding: 1rem 0rem;
+	transition: top ease-in-out 0.3s;
 }
 
 .navbar__container {
@@ -22,9 +26,9 @@
 	max-width: 6rem;
 	color: var(--color-white);
 	-webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.5s;
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
 }
 
 .navbar__menu {
@@ -32,28 +36,63 @@
 	justify-content: flex-end;
 	width: auto;
 	-webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 0.5s;
-  animation-name: fadeIn;
-  animation-duration: 0.5s;
-	
+	-webkit-animation-duration: 0.5s;
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
 }
-@-webkit-keyframes fadeIn { 
-	0% { opacity: 0; }
-	20% { opacity: 0; }
-	40% { opacity: 0.3; }
-	60% { opacity: 0.5; }
-	80% { opacity: 0.9; }
-	100% { opacity: 1; }
-  }
-  
-  @keyframes fadeIn {
-	0% { opacity: 0; }
-	20% { opacity: 0; }
-	40% { opacity: 0.3; }
-	60% { opacity: 0.5; }
-	80% { opacity: 0.9; }
-	100% { opacity: 1; }
-  }
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0.3;
+	}
+
+	60% {
+		opacity: 0.5;
+	}
+
+	80% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	40% {
+		opacity: 0.3;
+	}
+
+	60% {
+		opacity: 0.5;
+	}
+
+	80% {
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 .navbar__menu-list {
 	margin: 0;
 	padding: 0;

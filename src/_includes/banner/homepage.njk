@@ -1,22 +1,24 @@
-<header class="banner_home-background">
-    <div class="grid columns-2 max-width-1200 ">
-        <div
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="300"
-            class="banner_home-cat">
-          <h1> Compare Health Plans</h1>
-          <p>Technology to determine options, <br> Humanity to help you choose.</p>
-            <form 
-              id="clientsZipCode" 
-              class="cat__zipcode">
-                <label for="zipCode"></label>
-                <input type="text" id="zipCode" placeholder="ZIP CODE">
-                <a class="button" href="/get-quote">Search Plans</a>
+<header class="header bg_primary" role="banner">
+    <div class="grid columns-2 size-1sm-1lg gap-2">
+        <div class="flex-simple 
+        sm:items-center sm:justify-center
+        md:items-start md:justify-start
+        lg:items-start lg:justify-start"
+        >
+            <h1 class="text_white"> {{ title }} </h1>
+            {% if intro %}
+                <p> {{ intro }} </p>
+            {% endif %}
+            <form id="netlify-id8594757" class="form">
+                <label for="email"></label>
+                <input type="text" id="email" name="email" placeholder="Enter Your Email">
+                <button type="submit" class="button">Subscribe</button>
             </form>
         </div>
-        <div  data-aos="fade-left" class="banner_home-image-container">
-            <img class="banner_home-image-2" src="/images/homepage/homepage-banner.jpg" alt="Couple">
+        <div class="flex-stretch">
+        {% if BannerImagePath %}
+            <img class="image image-overlay" src="{{ BannerImagePath }}" alt="Image Alt Text" title="Image Title">
+        {% endif %}
         <div>
     </div>
 </header>

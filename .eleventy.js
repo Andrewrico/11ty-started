@@ -39,7 +39,7 @@ module.exports = function(config) {
   config.addPassthroughCopy("src/_includes/static/js");
   config.addPassthroughCopy("src/_includes/static/images");
   config.addPassthroughCopy("src/_includes/static/fonts");
-  config.addPassthroughCopy("src/_includes/static/icons");
+  config.addPassthroughCopy("src/_includes/static/icons/lib.svg");
   config.addPassthroughCopy('src/admin/config.yml');
   config.addPassthroughCopy('src/admin/previews.js');
   config.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');

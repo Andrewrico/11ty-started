@@ -1,0 +1,11 @@
+{% set js %}
+    {% include "../repository/dropdown.js" %}
+    {% include "../repository/drawer.js" %}
+    {% include "../repository/navbar.js" %}
+    {% include "../repository/accordion.js" %}
+{% endset %}
+
+<script>
+console.log("Hello from the Load");
+{{ js | jsmin | safe }}
+</script>

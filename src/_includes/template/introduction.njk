@@ -1,0 +1,11 @@
+{%- for introduction in collections.introductions -%}
+ <div class="introduction">
+    <img src="{{ introduction.data.src }}" alt="Image Alt" title="Image Title"/>
+    <h3>
+        {{ introduction.data.title }}
+    </h3>
+    <p>
+        {{ introduction.data.description }}
+    </p>
+</div>
+{%- endfor -%}

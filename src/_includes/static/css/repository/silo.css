@@ -1,0 +1,100 @@
+[class*="flex-simple"] {
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 768px) {
+    [class*="sm:justify-start"] {
+        justify-content: flex-start;
+    }
+    [class*="sm:justify-end"] {
+        justify-content: flex-end;
+    }
+    [class*="sm:justify-center"] {
+        justify-content: center;
+    }
+    [class*="sm:justify-stretch"] {
+        justify-content: stretch;
+    }
+    [class*="sm:items-start"] {
+        align-items: flex-start;
+    }
+    [class*="sm:items-end"] {
+        align-items: flex-end;
+    }
+    [class*="sm:items-center"] {
+        align-items: center;
+    }
+    [class*="sm:items-stretch"] {
+        align-items: stretch;
+    }
+}
+
+@media(min-width: 768px){
+
+    [class*="md:justify-start"] {
+        justify-content: flex-start;
+    }
+    [class*="md:justify-end"] {
+        justify-content: flex-end;
+    }
+
+    [class*="md:justify-center"] {
+        justify-content: center;
+    }
+
+    [class*="md:justify-stretch"] {
+        justify-content: stretch;
+    }
+
+    [class*="md:items-start"] {
+        align-items: flex-start;
+    }
+    [class*="md:items-end"] {
+        align-items: flex-end;
+    }
+    [class*="md:items-center"] {
+        align-items: center;
+    }
+    [class*="md:items-stretch"] {
+        align-items: stretch;
+    }
+}
+
+
+@media(min-width: 1024px){
+
+    [class*="lg:justify-start"] {
+        justify-content: flex-start;
+    }
+    [class*="lg:justify-end"] {
+        justify-content: flex-end;
+    }
+
+    [class*="lg:justify-center"] {
+        justify-content: center;
+    }
+
+    [class*="lg:justify-stretch"] {
+        justify-content: stretch;
+    }
+
+    [class*="lg:items-start"] {
+        align-items: flex-start;
+    }
+    [class*="lg:items-end"] {
+        align-items: flex-end;
+    }
+    [class*="lg:items-center"] {
+        align-items: center;
+    }
+    [class*="lg:items-stretch"] {
+        align-items: stretch;
+    }
+}
+
+.image-overlay {
+    -webkit-box-shadow: 16px -16px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 16px -16px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 16px -16px 0px 0px rgba(0,0,0,0.75);
+}

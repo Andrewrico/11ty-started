@@ -1,0 +1,17 @@
+{%- for card in collections.cards -%}
+ <div class="
+    card [ 
+        sm:items-center - sm:justify-center  
+        lg:items-center - lg:justify-center 
+    ]">
+    <svg>
+        <use href="{{ card.data.iconPath }}"></use>
+    </svg>
+    <h3>
+        {{ card.data.title }}
+    </h3>            
+    <p>
+        {{ card.data.description }}
+    </p>
+</div>
+{%- endfor -%}

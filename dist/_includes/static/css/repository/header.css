@@ -1,0 +1,25 @@
+.header {
+    padding: 1rem;
+}
+
+@media(min-width:1268px) {
+    .header {
+        padding: 1rem 0;
+    }
+}
+
+.bg_red {
+    background: red;
+}
+
+.bg_green {
+    background: green;
+}
+
+.bg_primary {
+    background: var(--color-primary);
+}
+
+.text_white {
+    color:#fff;
+}

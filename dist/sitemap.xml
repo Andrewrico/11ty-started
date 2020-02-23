@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://11ty-started.netlify.com/tags/demo-content/</loc>
+    <loc>https://11ty-started.netlify.com/tags/media/</loc>
     <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
   </url>
   
@@ -62,7 +62,7 @@
   </url>
   
   <url>
-    <loc>https://11ty-started.netlify.com/tags/media/</loc>
+    <loc>https://11ty-started.netlify.com/tags/cards/</loc>
     <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
   </url>
   
@@ -72,8 +72,28 @@
   </url>
   
   <url>
+    <loc>https://11ty-started.netlify.com/tags/demo-content/</loc>
+    <lastmod>Sat Feb 08 2020 17:10:28 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
     <loc>https://11ty-started.netlify.com/about/</loc>
     <lastmod>Sun Feb 09 2020 11:56:35 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/collections/homepage/card/card-first/</loc>
+    <lastmod>Sat Feb 22 2020 18:14:43 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/collections/homepage/card/card-second/</loc>
+    <lastmod>Sat Feb 22 2020 18:14:53 GMT-0500 (Eastern Standard Time)</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://11ty-started.netlify.com/collections/homepage/card/card-thirth/</loc>
+    <lastmod>Sat Feb 22 2020 18:15:13 GMT-0500 (Eastern Standard Time)</lastmod>
   </url>
   
   <url>
